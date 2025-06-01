@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="calculator"
+        android:textSize="80sp"
+        android:layout_marginLeft="15dp"
+        android:textColor="@color/design_default_color_primary"
+        android:textStyle="italic"
+        android:id="@+id/txt_view"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="115dp"
+        android:hint="enter num1"
+        android:inputType="number"
+        android:id="@+id/edtnum1"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absolutey="230dp"
+        android:hint="enter num2 "
+        android:inputType="number"
+        android:id="@+id/edtnum2"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Result"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/design_default_color_primary"
+        android:layout_marginLeft="150dp"
+        android:id="@+id/txt"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="30dp">
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:id="@+id/plusbtn"
+            android:src="@drawable/plus"/>
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_toRightOf="@id/plusbtn"
+            android:layout_marginLeft="90dp"
+            android:id="@+id/mutibtn"
+            android:src="@drawable/multi"/>
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_below="@id/plusbtn"
+            android:src="@drawable/division"
+            android:id="@+id/divisionbtn"
+            />
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_below="@id/mutibtn"
+            android:layout_marginLeft="220dp"
+            android:src="@drawable/subtract"
+            android:id="@+id/minusbtn"/>
+
+            />
+
+
+    </RelativeLayout>
+
+
+
+
+</LinearLayout>
